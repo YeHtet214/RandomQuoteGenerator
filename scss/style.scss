@@ -1,0 +1,95 @@
+
+// Utility
+$primary-color: darkblue;
+$fontSize: 18px;
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  color: $primary-color;
+  background: $primary-color;
+  font-size: $fontSize;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#quote-box {
+  box-shadow: 0 0 10px 2px #5553;
+  border-radius: 5px;
+  background: #fff;
+  padding: 1.5rem;
+  width: 50%;
+
+  #text {
+    font-size: 1.8rem;
+    margin-bottom: 1.3rem;
+
+    .quotation {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    p {
+      display: inline-block;
+    }
+  }
+
+  #author {
+    text-align: right;
+    margin: 1.5rem;
+  }
+
+  .links {
+    float: left;
+
+    i {
+      padding: .5rem;
+      background: $primary-color;
+      color: #fff;
+      border-radius: 3px;
+
+      &:hover {
+        opactiy: 0.8;
+      }
+    }
+  }
+  #new-quote {
+    float: right;
+  }
+  button {
+    background: $primary-color;
+    color: #fff;
+    padding: .5rem .8rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  @media (max-width: 958px) {
+    width: 80%;
+  }
+
+  @media (max-width: 576px) {
+    width: 95%;
+  }
+}
+
+#me {
+  color: #fff;
+  margin-top: 1rem;
+}

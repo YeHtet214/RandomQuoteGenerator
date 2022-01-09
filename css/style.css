@@ -1,0 +1,107 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  color: darkblue;
+  background: darkblue;
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#quote-box {
+  -webkit-box-shadow: 0 0 10px 2px #5553;
+          box-shadow: 0 0 10px 2px #5553;
+  border-radius: 5px;
+  background: #fff;
+  padding: 1.5rem;
+  width: 50%;
+}
+
+#quote-box #text {
+  font-size: 1.8rem;
+  margin-bottom: 1.3rem;
+}
+
+#quote-box #text .quotation {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#quote-box #text p {
+  display: inline-block;
+}
+
+#quote-box #author {
+  text-align: right;
+  margin: 1.5rem;
+}
+
+#quote-box .links {
+  float: left;
+}
+
+#quote-box .links i {
+  padding: .5rem;
+  background: darkblue;
+  color: #fff;
+  border-radius: 3px;
+}
+
+#quote-box .links i:hover {
+  opactiy: 0.8;
+}
+
+#quote-box #new-quote {
+  float: right;
+}
+
+#quote-box button {
+  background: darkblue;
+  color: #fff;
+  padding: .5rem .8rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#quote-box button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 958px) {
+  #quote-box {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  #quote-box {
+    width: 95%;
+  }
+}
+
+#me {
+  color: #fff;
+  margin-top: 1rem;
+}
